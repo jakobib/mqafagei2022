@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Jakob Voß (VZG)">
+  <meta name="dcterms.date" content="2022-10-13">
+  <title>Management der Datenqualität im K10plus mit QA catalogue</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/white.css" id="theme">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Management der Datenqualität im K10plus mit QA
+catalogue</h1>
+  <p class="author">Jakob Voß (VZG)</p>
+  <p class="institute">FAG-EI</p>
+  <p class="date">2022-10-13</p>
+</section>
+
+<section id="übersicht" class="slide level2">
+<h2>Übersicht</h2>
+<ul>
+<li><p>Qualitätsmanagement</p></li>
+<li><p>Das Werkzeug <em>QA catalogue</em></p></li>
+<li><p>Anwendung im K10plus</p></li>
+</ul>
+</section>
+<section id="qualitätsmanagement-im-k0plus-zwei-paradigmen"
+class="slide level2">
+<h2>Qualitätsmanagement im K0plus: zwei Paradigmen</h2>
+<ul>
+<li><strong>Autorität:</strong> in den K10plus kommt nur geprüftes, was
+einmal im Katalog ist, kann also nicht schlecht sein.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>Evidenz:</strong> nichts ist perfekt, dafür lässt es sich
+verbessern. Qualität ist messbar.</li>
+</ul>
+</div>
+</section>
+<section id="evidenzbasiertes-qualitätsmanagement" class="slide level2">
+<h2>Evidenzbasiertes Qualitätsmanagement</h2>
+<p>Kontinuierlicher Feedback-Loop:</p>
+<ul>
+<li><strong>Analyse:</strong> wo sind Daten gut, wo weniger?</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>Korrekturen:</strong> Verbesserung gefundener Fehler</li>
+</ul>
+</div>
+<div class="fragment">
+<p><em>Bislang fehlen im K10plus beide Schritte!</em></p>
+</div>
+</section>
+<section id="datenqualität" class="slide level2">
+<h2>Datenqualität</h2>
+<ul>
+<li><p>“Eignung festgelegte und vorausgesetzte Erfordernisse zu
+erfüllen” (ISO 8402)</p></li>
+<li><p>“Grad, in dem ein Satz inhärenter Merkmale Anforderungen erfüllt”
+(ISO 9000)</p></li>
+</ul>
+<div class="fragment">
+<p><em>Was sind die Erfordernisse/Anforderungen an Daten im
+K10plus?</em></p>
+</div>
+</section>
+<section id="definition-von-datenqualität" class="slide level2">
+<h2>Definition von Datenqualität</h2>
+<ul>
+<li><p>K10plus <strong>Katalogisierungsrichtlinien</strong></p></li>
+<li><p>In maschinenlesbarer Form <a
+href="https://format.k10plus.de/avram.pl">als Avram-Schema</a></p></li>
+<li><p>Andere Anforderungen sind schwieriger messbar</p></li>
+</ul>
+</section>
+<section id="qa-catalogue" class="slide level2">
+<h2>QA catalogue</h2>
+<ul>
+<li><p>Werkzeug zur Analyse der Qualität von MARC21-Daten</p></li>
+<li><p>Genutzt u.A. an der British Library, UB Ghent, Bibliothek des
+Ungarischen Parlament, Deutsche Digitale Bibliothek…</p></li>
+<li><p>Vorgestellt auf diversen Konferenzen</p></li>
+</ul>
+</section>
+<section id="funktionen" class="slide level2">
+<h2>Funktionen</h2>
+<ul>
+<li>Statistik</li>
+<li>Analyse</li>
+<li>Validierung</li>
+<li>Report</li>
+<li>Visualisierung</li>
+</ul>
+</section>
+<section id="demo" class="slide level2">
+<h2>Demo</h2>
+<ul>
+<li><p><a href="http://ddb.qa-catalogue.eu/K10plus/"
+class="uri">http://ddb.qa-catalogue.eu/K10plus/</a> (MARC21)</p></li>
+<li><p><a href="https://ddb.qa-catalogue.eu/k10plus_pica/"
+class="uri">https://ddb.qa-catalogue.eu/k10plus_pica/</a>
+(PICA+)</p></li>
+</ul>
+</section>
+<section id="beispiele" class="slide level2">
+<h2>Beispiele</h2>
+<ul>
+<li><p>Datensätze</p></li>
+<li><p>Verletzung der formalen Katalogisierungsregeln (Issues)</p></li>
+<li><p>Vollständigkeit</p></li>
+<li><p>Eignung für ausgewählte Anforderungen</p></li>
+<li><p>Feldinhalte am Beispiel der DDC-Notation (045F)</p></li>
+<li><p>…</p></li>
+</ul>
+</section>
+<section id="paretoprinzip-80-20-regel" class="slide level2">
+<h2>Paretoprinzip (80-20-Regel)</h2>
+<ul>
+<li>12% der Unterfelder decken 88% der Katalogdaten ab</li>
+<li>66% der Unterfelder kommen in weniger als 1% vor</li>
+</ul>
+<p><em>Viele Unterfelder nur für seltene Spezialfälle</em></p>
+<p><a href="http://ddb.qa-catalogue.eu/K10plus/?tab=pareto"
+class="uri">http://ddb.qa-catalogue.eu/K10plus/?tab=pareto</a></p>
+</section>
+<section id="anwendung-von-qa-catalogue-im-k10plus"
+class="slide level2">
+<h2>Anwendung von QA catalogue im K10plus</h2>
+<ul>
+<li><p>Bis Frühjahr 2023 Ausbau für PICA+ und produktiver
+Einsatz</p></li>
+<li><p>Deutschsprachige Oberfläche</p></li>
+<li><p>Anzeige entsprechender Pica3-Kategorien</p></li>
+<li><p>Bewerbung und Schulung?</p></li>
+<li><p>Korrekturen im <a href="https://format.gbv.de/pica/patch">PICA
+Patch Format</a></p></li>
+</ul>
+</section>
+<section id="mögliche-erweiterungen" class="slide level2">
+<h2>Mögliche Erweiterungen</h2>
+<ul>
+<li><p>Häufigere Updates und Reports (wöchentlich)</p></li>
+<li><p>Ausweitung auf Exemplardaten (Level 1 und 2)</p></li>
+<li><p>Filtern nach Beständen einzelner Einrichtungen</p></li>
+<li><p>Webservice zum Prüfen von Ausschnitten</p></li>
+<li><p>…</p></li>
+</ul>
+</section>
+<section id="aufgaben-für-fag-ei" class="slide level2">
+<h2>Aufgaben für FAG-EI?</h2>
+<ul>
+<li><p>Thematischen Gruppierung von PICA+ Feldern:<br />
+Inhaltserschließung, Formalerschließung…</p></li>
+<li><p>Ausbau der maschinenlesbaren Katalogisierungsrichtlinien:<br />
+Wertelisten,reguläre Ausdrücke…</p></li>
+<li><p>Qualitätsmanagement durch kontinuierliche Analysen und
+Korrekturen</p></li>
+</ul>
+</section>
+<section id="links-zur-beteiligung" class="slide level2">
+<h2>Links zur Beteiligung</h2>
+<ul>
+<li><a href="https://format.k10plus.de/avram.pl"
+class="uri">https://format.k10plus.de/avram.pl</a> (K10plus Avram)</li>
+<li><a href="https://ddb.qa-catalogue.eu/k10plus_pica/"
+class="uri">https://ddb.qa-catalogue.eu/k10plus_pica/</a> (PICA+)</li>
+<li><a href="https://ddb.qa-catalogue.eu/K10plus/"
+class="uri">https://ddb.qa-catalogue.eu/K10plus/</a> (MARC21)</li>
+<li><a href="https://listserv.gwdg.de/mailman/listinfo/qa-catalogue"
+class="uri">https://listserv.gwdg.de/mailman/listinfo/qa-catalogue</a>
+(Mailingliste)</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
