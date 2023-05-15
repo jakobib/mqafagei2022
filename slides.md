@@ -65,7 +65,7 @@ Kontinuierlicher Feedback-Loop:
 
 - <http://ddb.qa-catalogue.eu/K10plus/> (MARC21)
 
-- <https://ddb.qa-catalogue.eu/k10plus_pica/> (PICA+)
+- <http://ddb.qa-catalogue.eu/k10plus_pica/> (PICA+)
 
 ## Beispiele
 
